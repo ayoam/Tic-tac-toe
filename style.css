@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(7, 1, 39);   
+}
+
+#game-wrapper{
+    display: grid;
+    grid-row-gap : 10px;
+    grid-template-columns : repeat(3,1fr);
+    grid-template-columns : repeat(3,1fr);
+    grid-column-gap : 12px;
+    min-width: 480px;
+    min-height: 480px;
+    background-color: whitesmoke;
+    margin: 50px auto;
+    align-items: center;
+}
+
+.column{
+    background-color:rgb(7, 1, 39) ;
+    height: 153px; 
+    text-align: center;
+}
+
+.column img{
+     width: 105px;
+     margin: 0 auto;
+     padding: 15px 0;
+}
+
+.win{
+    opacity: 0.2;
+} 
+
+.blink_me {
+    animation: blinker 1.3s linear infinite;
+  }
+  
+  @keyframes blinker {  
+    20% { opacity: 0; }
+  }
+
+  .res{
+    margin: 100px 100px;
+    min-width: 180px;
+    height: 210px;
+    text-align: center;
+  }
+
+  .res p {
+      color: white;
+      font-size: 26px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+
+  .res p span{
+    font-size: 180px;
+    font-weight: bold;
+}
+
+#div1{
+    display: flex;
+}
+
+#div2{
+     text-align: center;
+     justify-content: center;
+     align-items: center;
+     display: none;
+}
+
+#div2 p {
+   color: white;
+   font-family: 'Josefin Sans', sans-serif;
+   font-size: 35px;
+   margin-right: 10px;
+}
+
+#div2 button {
+    height: 40px;
+    border: solid 2px white ;
+    border-radius: 0.3em;
+    font-size: 21px;
+    background-color:rgb(7, 1, 39) ;
+    color: white;
+    margin-left: 10px;
+    padding : 0 10px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#play-again:hover{
+    background-color:white ;
+    color: rgb(7, 1, 39);
+}
+
+.fa-caret-down{
+  color: white;
+  font-size: 70px;
+  position: relative;
+  top : 35px;
+}
+
+.play1{
+  opacity: 1;
+}
+
+.play2{
+  opacity: 0;
+}
+
+#player2{
+  opacity: 0.6;
+}
+
+
